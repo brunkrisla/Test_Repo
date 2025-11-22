@@ -1,0 +1,29 @@
+[project]
+name = "test-repo"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "requests (>=2.32.5,<3.0.0)",
+    "numpy (>=2.3.5,<3.0.0)",
+    "ipykernel (>=7.1.0,<8.0.0)",
+    "python-dotenv (>=1.2.1,<2.0.0)",
+    "dask[complete] (>=2025.11.0,<2026.0.0)",
+    "coiled (>=1.129.2,<2.0.0)",
+    "pandas (>=2.3.3,<3.0.0)",
+    "pyarrow (>=22.0.0,<23.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ipykernel (>=7.1.0,<8.0.0)"
+]
